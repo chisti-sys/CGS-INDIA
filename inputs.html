@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms_and_Inputs</title>
+  </head>
+  <body>
+    <form>
+      <h1>Using Basic Inputs</h1>
+      <div>
+        <label for="">Name:</label>
+        <input type="text" name="" id="" placeholder="Enter name" required />
+      </div>
+      <br />
+      <div>
+        <label for="">Email:</label>
+        <input type="email" name="" id="" placeholder="Enter email" required />
+      </div>
+      <br />
+      <div>
+        <label for="">Pass:</label>
+        <input
+          type="password"
+          name=""
+          id=""
+          placeholder="Enter password"
+          required
+        />
+      </div>
+      <br />
+      <div>
+        <label for="">Phone No:</label>
+        <input
+          type="tel"
+          name=""
+          id=""
+          min="0"
+          max="10"
+          placeholder="Enter phone number"
+          required
+        />
+      </div>
+      <br />
+      <div>
+        <label for="Semester">Please select your Semester:</label>
+        <select name="" id="Semester">
+          <option>---select---</option>
+          <option value="sem1">BTech 1-1</option>
+          <option value="sem2">BTech 1-2</option>
+          <option value="sem3">BTech 2-1</option>
+          <option value="sem4">BTech 2-2</option>
+          <option value="sem5">BTech 3-1</option>
+          <option value="sem6">BTech 3-2</option>
+          <option value="sem7">BTech 4-1</option>
+          <option value="sem8">BTech 4-2</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <label for="">Date of Birth:</label>
+        <input type="date" name="" id="" />
+      </div>
+      <div>
+        <p>Please select your preferred language:</p>
+        <input type="radio" name="code" id="c" />
+        <label for="c">C</label><br />
+        <input type="radio" name="code" id="c++" />
+        <label for="c++">C++</label><br />
+        <input type="radio" name="code" id="java" />
+        <label for="java">Java</label><br />
+        <input type="radio" name="code" id="python" />
+        <label for="python">Python</label>
+        <br />
+      </div>
+      <div>
+        <p>Rate your skill set from 1 - 10 :</p>
+        <input type="range" name="" id="" min="0" max="10" />
+      </div>
+      <div>
+        <label for="">What is your favorite colour :</label>
+        <input type="color" name="" id="" />
+      </div>
+      <div>
+        <p>Comment your feedback:</p>
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="5"
+          placeholder="Give a feedback"
+        ></textarea>
+      </div>
+      <br />
+      <div>
+        <label for="">Time of Submission</label>
+        <input type="time" name="" id="" />
+      </div>
+      <br />
+      <div>
+        <label for="">Enter your age:</label>
+        <input
+          type="number"
+          name=""
+          id=""
+          min="0"
+          max="100"
+          placeholder="Age"
+        />
+      </div>
+      <br />
+      <div>
+        <input type="submit" value="Submit" />
+      </div>
+      <br />
+      <div>
+        <input type="reset" value="Reset" />
+      </div>
+    </form>
+  </body>
+</html>
