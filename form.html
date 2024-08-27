@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>registration</title>
+    <style>
+        @import "~bootstrap/dist/css/bootstrap.min.css";
+
+        body {
+            background-color: rgb(225, 220, 214);
+            padding-bottom: 5%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        form {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 30px 20px 28px rgba(32, 21, 154, 0.5);
+            max-width: 750px;
+            width: 100%;
+            text-align: center;
+        }
+        .mb-3 {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <img src="google.jpeg" alt="google">
+        <div class="mb-3">
+            <label id="full_name" for="full_name">Name</label>
+            <input id="Name" name="full_name" type="text" class="form-control" placeholder="Enter name" />
+        </div>
+        <div class="mb-3">
+            <label id="email_label" for="email">Email Address</label>
+            <input id="email" name="email" type="email" class="form-control" placeholder="Enter email" />
+        </div>
+        <div class="mb-3">
+            <label id="password_label" for="password">Password</label>
+            <input id="password" name="password" type="password" class="form-control" placeholder="Enter password" />
+        </div>
+        <div class="mb-3">
+            <label id="repeat" for="password_repeat">Retype Password</label>
+            <input id="password_repeat" name="password_repeat" type="password" class="form-control" placeholder="Retype password" />
+        </div>
+        <button type="submit" class="btn btn-primary">Register</button>
+        <button type="submit" class="btn btn-primary">SignIn</button>
+    </form>
+</body>
+</html>
