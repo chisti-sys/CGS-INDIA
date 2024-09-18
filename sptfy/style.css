@@ -1,0 +1,128 @@
+body {
+    background-color: #f0f8ff; /* Light, cheerful background */
+    color: #333; /* Dark text for good contrast */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun font choice */
+    margin: 0; /* Remove default margin */
+  }
+  
+  .container {
+    max-width: 800px; /* Centered container */
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center; /* Center text */
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #ff6347; /* Tomato color for the main title */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  }
+  
+  .search-bar {
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    border: 2px solid #ff8c00; /* Bright orange border */
+    border-radius: 25px;
+    padding: 10px;
+    color: #333;
+    background-color: #fff; /* White background for input */
+    width: calc(100% - 120px); /* Full width minus button */
+    transition: border-color 0.3s;
+  }
+  
+  input[type="text"]::placeholder {
+    color: #ff4500; /* Orange placeholder color */
+  }
+  
+  input[type="text"]:focus {
+    border-color: #ff1493; /* Change border color on focus */
+  }
+  
+  .btn {
+    border-radius: 25px;
+    font-weight: bold; /* Make button text bold */
+    padding: 10px 20px;
+    transition: background-color 0.3s; /* Smooth transition */
+  }
+  
+  .btn-primary {
+    background-color: #ff1493; /* Deep pink */
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #ff69b4; /* Light pink on hover */
+  }
+  
+  .track-item {
+    background-color: #ffe4e1; /* Light pink card for tracks */
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    transition: transform 0.2s; /* Smooth hover effect */
+  }
+  
+  .track-item:hover {
+    transform: scale(1.02); /* Slightly larger on hover */
+  }
+  
+  .track-item img {
+    width: 60px; /* Small album cover for track items */
+    height: 60px; /* Keep it square */
+    border-radius: 5px; /* Slightly rounded corners */
+    margin-right: 15px; /* Space between image and text */
+  }
+  
+  .track-info {
+    flex-grow: 1; /* Allow track info to take remaining space */
+    text-align: left; /* Align text to the left */
+  }
+  
+  .player {
+    margin-top: 20px;
+    background-color: #ffdab9; /* Light peach player background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow for the player */
+  }
+  
+  .player img {
+    border-radius: 10px; /* Rounded album cover */
+    border: 3px solid #ff6347; /* Tomato border for the album cover */
+    max-width: 100%; /* Responsive image */
+  }
+  
+  #track-info {
+    margin-top: 10px;
+  }
+  
+  audio {
+    width: 100%; /* Full-width audio player */
+    border-radius: 10px;
+    margin-top: 10px; /* Space above the audio player */
+  }
+  
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2.5rem; /* Responsive heading size */
+    }
+  
+    .container {
+      padding: 10px;
+    }
+  
+    .track-item {
+      flex-direction: column; /* Stack elements vertically on small screens */
+      align-items: flex-start; /* Align items to the start */
+    }
+  
+    .track-item img {
+      margin-bottom: 10px; /* Space between image and text */
+    }
+  }
+  
